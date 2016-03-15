@@ -10,25 +10,9 @@ public class IntegrationRoute extends RouteBuilder {
   
             
         from("activemq:queue:camelInput").
-        
         process(new LoggingProcessor()).
         bean(new TransformationBean(), "makeUpperCase").
-        
-       /* sn fkndnjkfgndjkfgnjdfg
-        ''ffdfg
-        dffg
-        fdfgdf,ffgkdfkfjogndkjgdffg
-        dffdffgd,gkkjmmdg
-        dssflkmdffigjhdfjkgk
-        ]snfkjdfngi
-        */
-        
-        
-        
-        
-        
-        
-        
         to("activemq:queue:camelOutput").to("activemq:queue:camelOutput2");
+
     }
 }
