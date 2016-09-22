@@ -35,6 +35,12 @@ public class CamelStart {
 			CamelContext context = new DefaultCamelContext();
 			ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:61616");
 			context.addComponent("activemq", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));
+			System.out.println("Received Order: ");
+			System.out.println("Received Order: ");
+			System.out.println("Received Order: ");
+			System.out.println("Received Order: ");
+			System.out.println("Received Order: ");
+			System.out.println("Received Order: ");
 			context.addRoutes(new IntegrationRoute());
 			context.start();
 			Thread.sleep(3000);
