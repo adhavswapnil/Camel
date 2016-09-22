@@ -31,7 +31,7 @@ public class CamelStart {
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		try {
-
+			
 			CamelContext context = new DefaultCamelContext();
 			ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:61616");
 			context.addComponent("activemq", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));
@@ -39,7 +39,8 @@ public class CamelStart {
 			context.start();
 			Thread.sleep(3000);
 			context.stop();
-
+			
+			
 		} catch (Exception err) {
 			err.printStackTrace();
 		}
