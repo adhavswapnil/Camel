@@ -8,25 +8,5 @@ public class LoggingProcessor implements Processor {
 public void process(Exchange exchange) throws Exception {
 System.out.println("Received Order: " +
 exchange.getIn().getBody(String.class));
-System.out.println("Received Order: ");
-System.out.println("Received Order: ");
-
-System.out.println("Received Order: ");
-
-System.out.println("Received Order: ");
-System.out.println("Received Order: ");
-System.out.println("Received Order: ");
-System.out.println("Received Order: ");
-System.out.println("Received Order: ");System.out.println("Received Order: ");
-System.out.println("Received Order: ");
-System.out.println("Received Order: ");
-System.out.println("Received Order: ");System.out.println("Received Order: ");
-System.out.println("Received Order: ");
-System.out.println("Received Order: ");
-System.out.println("Received Order: ");
-System.out.println("Received Order: ");
-
-
-
 }
 }
